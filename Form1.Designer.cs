@@ -68,6 +68,7 @@
             this.hardwareLabel = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.test = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.soundboard.SuspendLayout();
             this.options.SuspendLayout();
@@ -106,6 +107,7 @@
             // 
             // options
             // 
+            this.options.Controls.Add(this.test);
             this.options.Controls.Add(this.browseButton);
             this.options.Controls.Add(this.soundFolderTextBox);
             this.options.Controls.Add(this.KeyButton12);
@@ -445,6 +447,16 @@
             this.hardwareLabel.TabIndex = 0;
             this.hardwareLabel.Text = "HARDWARE";
             // 
+            // test
+            // 
+            this.test.Location = new System.Drawing.Point(567, 7);
+            this.test.Name = "test";
+            this.test.Size = new System.Drawing.Size(75, 23);
+            this.test.TabIndex = 33;
+            this.test.Text = "Test";
+            this.test.UseVisualStyleBackColor = true;
+            this.test.Click += new System.EventHandler(this.test_Click);
+            // 
             // BoardWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,6 +515,7 @@
         private System.Windows.Forms.TextBox soundFolderTextBox;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button sound1;
+        private System.Windows.Forms.Button test;
     }
 }
 
